@@ -1,0 +1,1 @@
+This repo serves as a parent repo where I will push up new challenges that I tackle from frontend mentor
