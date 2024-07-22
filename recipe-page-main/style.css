@@ -1,0 +1,54 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+:root {
+  /* Font Families */
+  --font-family-young-serif: "Young Serif", serif;
+  --font-family-outfit: "Outfit", sans-serif;
+
+  /* Font Weights */
+  --font-weight-young-serif-normal: 400;
+  --font-weight-outfit-normal: 400;
+  --font-weight-outfit-semibold: 600;
+  --font-weight-outfit-bold: 700;
+
+  /* Colors */
+  --white: hsl(0, 0%, 100%);
+  --stone-100: hsl(30, 54%, 90%);
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-900: hsl(24, 5%, 18%);
+  --brown-800: hsl(14, 45%, 36%);
+  --rose-800: hsl(332, 51%, 32%);
+  --rose-50: hsl(330, 100%, 98%);
+
+  /* Widths */
+  --desktop-width: 1440px;
+  --mobile-width: 375px;
+}
+
+html {
+  background-color: var(--stone-100);
+  width: 1440px;
+}
+
+body {
+  background-color: var(--white);
+  font-family: var(--font-family-young-serif);
+  font-weight: var(--font-weight-outfit-normal);
+}
+
+.prep-time {
+  background-color: var(--rose-50);
+}
+
+.prep-time h1 {
+  color: var(--rose-800);
+}
