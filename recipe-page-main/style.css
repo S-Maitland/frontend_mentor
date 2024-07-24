@@ -36,19 +36,113 @@
 
 html {
   background-color: var(--stone-100);
-  width: 1440px;
+  font-family: var(--font-family-outfit);
+  font-weight: var(--font-weight-outfit-normal);
 }
 
 body {
   background-color: var(--white);
+  border-radius: 1rem;
+  color: var(--stone-600);
+  margin: 5rem 15rem;
+  max-width: var(--desktop-width);
+  padding: 3rem;
+}
+
+.hero-image {
+  border-radius: 1rem;
+  height: auto;
+  max-width: 100%;
+}
+
+hr {
+  opacity: 0.3;
+}
+
+h1,
+h3,
+h4,
+h5 {
+  color: var(--brown-800);
   font-family: var(--font-family-young-serif);
-  font-weight: var(--font-weight-outfit-normal);
+  font-size: x-large;
+  font-weight: 900;
+}
+
+section {
+  padding: 1.5rem 0;
+}
+
+section h1,
+h2,
+h3,
+h4,
+h5 {
+  font-size: xx-large;
+  padding-bottom: 1rem;
+}
+
+ul,
+ol {
+  line-height: 2rem;
+  list-style-position: inside;
+  padding-left: 0.5rem;
+}
+
+li {
+  margin: 0;
+}
+.recipe-intro h1 {
+  font-size: xx-large;
 }
 
 .prep-time {
   background-color: var(--rose-50);
+  border-radius: 1rem;
+  padding: 1.5rem;
 }
 
-.prep-time h1 {
+.prep-time h2 {
   color: var(--rose-800);
+  font-family: var(--font-family-outfit);
+  font-size: medium;
+  font-weight: var(--font-weight-outfit-bold);
+}
+
+.prep-time li::marker {
+  color: var(--rose-800);
+}
+
+.ingredients li::marker {
+  color: var(--brown-800);
+}
+
+.instructions li::marker {
+  color: var(--brown-800);
+  font-weight: var(--font-weight-outfit-bold);
+}
+
+.nutrition table {
+  border-collapse: collapse;
+  font-family: var(--font-family-outfit);
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.nutrition tr {
+  border-bottom: 1px solid var(--stone-150);
+}
+
+.nutrition tr:last-child {
+  border-bottom: none;
+}
+
+.nutrition td {
+  text-indent: 2rem;
+  padding: 1rem 0;
+}
+
+.nutrition td:nth-child(2) {
+  font-weight: var(--font-weight-outfit-bold);
+  color: var(--brown-800);
 }
